@@ -1,0 +1,19 @@
+.icons {
+                    background-image:url("sprite.png");
+                    display: inline-block;
+                }
+.icons-cxicon{
+                        width:28px;
+                        height:28px;
+                        background-position: -0px -36px;
+                    }
+.icons-coupon{
+                        width:126px;
+                        height:36px;
+                        background-position: -0px -0px;
+                    }
+.icons-timer{
+                        width:26px;
+                        height:26px;
+                        background-position: -28px -36px;
+                    }

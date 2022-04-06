@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">按钮</button>
+    <script src="./xmlHttp.js"></script>
+    <script>
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        var xmlhttp = createXmlHttp();
+        console.log(xmlhttp,'xmlhttp');
+        // xmlhttp.open("GET", "http://localhost:9000/login/list", true);
+        xmlhttp.open("POST", "http://localhost:9000/login/", true);
+        xmlhttp.onreadystatechange = function () {
+          console.log(xmlhttp, "xmlhttp");
+          if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+            console.log(xmlhttp.responseText, "responseText");
+          }
+        };
+        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xmlhttp.send('age=22')
+        // xmlhttp.send();
+      });
+    </script>
+  </body>
+</html>
