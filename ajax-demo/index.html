@@ -9,22 +9,16 @@
   <body>
     <button id="btn">按钮</button>
     <script src="./xmlHttp.js"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
     <script>
       var btn = document.getElementById("btn");
       btn.addEventListener("click", function () {
-        var xmlhttp = createXmlHttp();
-        console.log(xmlhttp,'xmlhttp');
-        // xmlhttp.open("GET", "http://localhost:9000/login/list", true);
-        xmlhttp.open("POST", "http://localhost:9000/login/", true);
-        xmlhttp.onreadystatechange = function () {
-          console.log(xmlhttp, "xmlhttp");
-          if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-            console.log(xmlhttp.responseText, "responseText");
-          }
-        };
-        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-        xmlhttp.send('age=22')
-        // xmlhttp.send();
+        $.ajax({
+          url: "http://localhost:9000/user/seleUser",
+          type: "GET",
+          dataType: "json",
+          data: { username: "tom2" },
+        });
       });
     </script>
   </body>

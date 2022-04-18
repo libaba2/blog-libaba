@@ -1,0 +1,71 @@
+.icons {
+    background-image: url("sprite.png");
+    display: inline-block;
+    background-size: 14.8vw 12.9333vw; 
+}
+
+.icons-task-check {
+    width: 3.2vw;
+    height: 3.2vw;
+    background-position: -0vw -9.733333vw;
+}
+
+.icons-task-enter {
+    width: 1.333333vw;
+    height: 2.4vw;
+    background-position: -8.8vw -5.333333vw;
+}
+
+.icons-task-friends {
+    width: 4.4vw;
+    height: 4.4vw;
+    background-position: -0vw -5.333333vw;
+}
+
+.icons-task-not-check {
+    width: 3.2vw;
+    height: 3.2vw;
+    background-position: -3.2vw -9.733333vw;
+}
+
+.icons-task-picker {
+    width: 5.333333vw;
+    height: 5.333333vw;
+    background-position: -0vw -0vw;
+}
+
+.icons-task-position {
+    width: 4vw;
+    height: 4vw;
+    background-position: -10.533333vw -4.266667vw;
+}
+
+.icons-task-share {
+    width: 4.4vw;
+    height: 4.266667vw;
+    background-position: -4.4vw -5.333333vw;
+}
+
+.icons-task-timer {
+    width: 2.933333vw;
+    height: 2.933333vw;
+    background-position: -9.6vw -9.733333vw;
+}
+
+.icons-task-upload {
+    width: 4.266667vw;
+    height: 4.266667vw;
+    background-position: -10.533333vw -0vw;
+}
+
+.icons-task-users {
+    width: 5.2vw;
+    height: 4.266667vw;
+    background-position: -5.333333vw -0vw;
+}
+
+.icons-task-warring {
+    width: 3.2vw;
+    height: 3.2vw;
+    background-position: -6.4vw -9.733333vw;
+}

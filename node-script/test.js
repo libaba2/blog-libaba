@@ -1,4 +1,4 @@
-var Cbsprite = require('create-base-sprite').createSprite
+// var Cbsprite = require('create-base-sprite').createSprite
 const OPTIONS = {
     outputDir: __dirname + "/output/", // 输出路径
     spriteImageName: "sprite.png", // 合成sprite图片名
@@ -6,5 +6,9 @@ const OPTIONS = {
     spriteImageCSS: "sprite.css",  // 输出css样式文件名
     cssImagePrefix: "icons-", // 样式前缀
 };
-var csprite = new Cbsprite(OPTIONS)
-csprite.runCreate('./images')
+// var csprite = new Cbsprite(OPTIONS)
+// csprite.runCreate('./images')
+
+var sizeOf = require('image-size');
+var dimensions = sizeOf('./output/sprite.png');
+console.log(dimensions.width, dimensions.height);

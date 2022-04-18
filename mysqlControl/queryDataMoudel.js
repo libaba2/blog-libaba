@@ -2,34 +2,39 @@ var connection = require('./collection').collectinoMysql()
 
 
 function queryData(sql) {
-    connection.query(sql, function (error, results, fields) {
-        if (error) throw error;
-        console.log(results);
-        return results;
+
+    return new Promise((resolve, reject) => {
+        connection.query(sql, function (error, results, fields) {
+            if (error) throw error;
+            resolve(results);
+        })
     })
 }
 
 function insertData(sql, insertParams) {
-    connection.query(sql, insertParams, function (error, results, fields) {
-        if (error) throw error;
-        console.log(results);
-        return results;
+    return new Promise((resolve, reject) => {
+        connection.query(sql, insertParams, function (error, results, fields) {
+            if (error) throw error;
+            resolve(results);
+        })
     })
 }
 
 function updateData(sql, insertParams) {
-    connection.query(sql, insertParams, function (error, results, fields) {
-        if (error) throw error;
-        console.log(results);
-        return results;
+    return new Promise((resolve, reject) => {
+        connection.query(sql, insertParams, function (error, results, fields) {
+            if (error) throw error;
+            resolve(results);
+        })
     })
 }
 
 function deleteData(sql, insertParams) {
-    connection.query(sql, insertParams, function (error, results, fields) {
-        if (error) throw error;
-        console.log(results);
-        return results;
+    return new Promise((resolve, reject) => {
+        connection.query(sql, insertParams, function (error, results, fields) {
+            if (error) throw error;
+            resolve(results);
+        })
     })
 }
 

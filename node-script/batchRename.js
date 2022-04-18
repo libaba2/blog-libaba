@@ -96,7 +96,7 @@ function baseFilesReaname({baseUrl, type, str, separator, excludeType}) {
 }
 const config = {
     baseUrl: 'E:/桌面文件/git',
-    type: 'all',
+    type: 'all' ,
     str: 'scratch-img',
     separator: '-',
     excludeType: ['css']

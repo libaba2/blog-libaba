@@ -1,0 +1,68 @@
+{
+    "task-check": {
+        "x": 0,
+        "y": 73,
+        "width": 24,
+        "height": 24
+    },
+    "task-enter": {
+        "x": 66,
+        "y": 40,
+        "width": 10,
+        "height": 18
+    },
+    "task-friends": {
+        "x": 0,
+        "y": 40,
+        "width": 33,
+        "height": 33
+    },
+    "task-not-check": {
+        "x": 24,
+        "y": 73,
+        "width": 24,
+        "height": 24
+    },
+    "task-picker": {
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+    },
+    "task-position": {
+        "x": 79,
+        "y": 32,
+        "width": 30,
+        "height": 30
+    },
+    "task-share": {
+        "x": 33,
+        "y": 40,
+        "width": 33,
+        "height": 32
+    },
+    "task-timer": {
+        "x": 72,
+        "y": 73,
+        "width": 22,
+        "height": 22
+    },
+    "task-upload": {
+        "x": 79,
+        "y": 0,
+        "width": 32,
+        "height": 32
+    },
+    "task-users": {
+        "x": 40,
+        "y": 0,
+        "width": 39,
+        "height": 32
+    },
+    "task-warring": {
+        "x": 48,
+        "y": 73,
+        "width": 24,
+        "height": 24
+    }
+}

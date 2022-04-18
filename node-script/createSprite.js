@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-03-25 09:49:30
- * @LastEditTime: 2022-03-28 10:46:33
+ * @LastEditTime: 2022-04-11 15:36:24
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \blog-libaba\node-script\createSprite.js
@@ -16,7 +16,7 @@ const OPTIONS = {
     spriteImageCSS: "sprite.css",  // 输出css样式文件名
     cssImagePrefix: "icons-", // 样式前缀
 };
-runCreate('./images')
+runCreate('E:\/Download\/task-icons')
 /**
  * @description: 
  * @param {string} inputUrl 小图标源路径
@@ -24,7 +24,7 @@ runCreate('./images')
  */
 function runCreate(inputUrl) {
     readdir(inputUrl, []).then(e => {
-        runCreateSprite(e)
+        runCreateSprite(e,'vw')
     })
 }
 /**
